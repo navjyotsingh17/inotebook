@@ -25,7 +25,7 @@ const SignUp = (props) => {
     console.log(json);
 
     //checking if the json reponse contains success=true if yes then navigate user to login page, else show a alert. 
-    if (json.sucess) {
+    if (json.success) {
       navigate("/login");
       props.showAlert("Account created successfully", "success");
     }

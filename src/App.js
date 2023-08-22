@@ -35,7 +35,7 @@ function App() {
     {/* wrapped all the children routes in the NoteState component for content API. */}
       <NoteState>
         <Router>
-          <Navbar />
+          <Navbar showAlert={showAlert}/>
           <Alert alert={alert}/>
           <div className='container'>
             <Routes>

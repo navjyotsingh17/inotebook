@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 var fetchuser = require('../middleware/fetchuser');
 const Note = require('../models/Note');
+// this is added for the @gmail.com, etc validations in the backend
 const { body, validationResult } = require('express-validator');
 
 //Route 1: Get all notes using GET request "/api/notes/fetchallnotes". Login required

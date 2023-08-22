@@ -24,6 +24,7 @@ const Noteitem = (props) => {
                     </div>
                     <p className="card-text">{note.description}</p>
                     <p className="card-text">{note.tag}</p>
+                    <p className="card-text"><small className="text-muted">Created on {new Date(note.date).toGMTString()}</small></p>
                 </div>
             </div>
         </div>

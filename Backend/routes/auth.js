@@ -5,6 +5,8 @@ const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 var fetchuser = require('../middleware/fetchuser');
+require("dotenv").config();
+
 const JWT_SCERET = 'Navjyot$'; // this is customizable
 
 //Route 1: Create a POST request "/api/auth/createUser". No login required

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   // useLocation hook is used for storing the current page location to used below
   let location = useLocation();
@@ -15,6 +15,7 @@ const Navbar = () => {
   //below method is used when the user clicks on the logout button the auth_Token will be get removed from the localStorage and the user will navigate to the login page.
   const handelLogout = () => {
     localStorage.removeItem('authToken')
+    props.showAlert("Logged out successfully", "success");
     navigate('/login')
   }
 

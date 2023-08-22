@@ -1,6 +1,8 @@
 const { getNextKeyDef } = require('@testing-library/user-event/dist/keyboard/getNextKeyDef');
 var jwt = require('jsonwebtoken');
-const JWT_SCERET = 'Navjyot$';// this is customizable
+require("dotenv").config();
+
+const JWT_SCERET = 'Navjyot$'; // this is customizable
 
 const fetchuser = (req, res, next) => {
     //get the user from the jet token  and add id to the req obj
